@@ -1,0 +1,6 @@
+/.claude
+/target
+/corpus
+/docs
+/scripts
+.DS_Store

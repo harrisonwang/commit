@@ -1,0 +1,20 @@
+[package]
+name = "commit-mcp"
+version = "1.0.0"
+edition = "2024"
+
+[lib]
+name = "commit_mcp"
+path = "src/lib.rs"
+
+[[bin]]
+name = "commit-mcp"
+path = "src/main.rs"
+
+[dependencies]
+commit-core = { path = "../commit-core" }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+
+[dev-dependencies]
+tempfile = "3.23.0"

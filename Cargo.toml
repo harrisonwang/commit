@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "crates/commit-core",
+    "crates/commit-cli",
+    "crates/commit-mcp",
+]
+resolver = "3"

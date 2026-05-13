@@ -1,0 +1,20 @@
+[package]
+name = "commit-core"
+version = "1.0.0"
+edition = "2024"
+
+[lib]
+name = "commit_core"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+tempfile = "3.23.0"
+toml = "0.9.8"
+tree-sitter = { version = "0.26.8", optional = true }
+tree-sitter-rust = { version = "0.24.2", optional = true }
+
+[features]
+default = ["ast-rust"]
+ast-rust = ["dep:tree-sitter", "dep:tree-sitter-rust"]
